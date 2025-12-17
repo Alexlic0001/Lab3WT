@@ -5,7 +5,7 @@ namespace LabUI.Data
 {
     public class DbInit
     {
-        public static async Task SeedData(WebApplication app)
+        public static async Task SeedData(WebApplication app)//
         {
             using var scope = app.Services.CreateScope();
             var userManager = scope.ServiceProvider.GetRequiredService<UserManager<AppUser>>();
